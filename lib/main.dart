@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'input_page.dart';
 
-const DARKEST_PURPLE = 0xFF0A0E21;
+import 'constants.dart';
+import 'screens/input_page.dart';
 
 void main() => runApp(BMICalculator());
 
@@ -11,9 +11,9 @@ class BMICalculator extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
-        primaryColor: Color(DARKEST_PURPLE),
-        backgroundColor: Color(DARKEST_PURPLE),
-        scaffoldBackgroundColor: Color(DARKEST_PURPLE),
+        primaryColor: kDarkestPurpleColor,
+        backgroundColor: kDarkestPurpleColor,
+        scaffoldBackgroundColor: kDarkestPurpleColor,
       ),
       home: InputPage(),
     );

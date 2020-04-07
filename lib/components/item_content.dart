@@ -1,3 +1,4 @@
+import 'package:bmi_calculator/constants.dart';
 import 'package:flutter/material.dart';
 
 class ItemSelect extends StatelessWidget {
@@ -14,19 +15,14 @@ class ItemSelect extends StatelessWidget {
         Icon(
           icon,
           size: 80.0,
-          color: Color(0xFF8D8E98),
+          color: Colors.white,
         ),
         SizedBox(
           height: 15.0,
         ),
         Text(
           label,
-          style: TextStyle(
-            fontSize: 14.0,
-            fontWeight: FontWeight.w600,
-            letterSpacing: 1.5,
-            color: Color(0xFF8D8E98),
-          ),
+          style: kLabelStyle,
         )
       ],
     );
